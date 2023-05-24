@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0517</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Caveat", cursive;
+        line-height: 1;
+      }
+      .carousel {
+        background-color: #0066ff;
+        margin: 100px auto;
+        width: 800px;
+        padding-right: 40px;
+        padding-left: 80px;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+
+        /* flex */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 86px;
+        position: relative;
+      }
+      blockquote {
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+      .quote_text {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 32px;
+      }
+      .quote_author {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+      .quote_job {
+        font-size: 16px;
+      }
+      .btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+      }
+      .icon {
+        stroke: #0066ff;
+        width: 24px;
+        height: 24px;
+
+        /* flex */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn_left {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+      .btn_right {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+      img {
+        border-radius: 15px;
+        width: 250px;
+        height: 250px;
+        transform: scale(1.25);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+      .dots {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 32px);
+        display: flex;
+        gap: 12px;
+      }
+      .dot {
+        height: 12px;
+        width: 12px;
+        background-color: #fff;
+        border: 2px solid #0066ff;
+        border-radius: 50%;
+      }
+      .dot_fill {
+        background-color: #0066ff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="carousel">
+      <img src="/20230517/picture.jpg" alt="pic" />
+      <blockquote class="quote">
+        <p class="quote_text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+          nobis earum error deleniti ratione inventore maxime, quisquam nam
+          accusantium sint non laborum cupiditate laboriosam quas omnis ipsa
+          ullam eveniet autem.
+        </p>
+        <p class="quote_author">Eric</p>
+        <p class="quote_job">Student</p>
+      </blockquote>
+      <button class="btn btn_left">
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="btn btn_right">
+        <svg
+          class="icon"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+      <div class="dots">
+        <button class="dot dot_fill">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>
